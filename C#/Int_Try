@@ -1,0 +1,22 @@
+using System; 
+
+namespace TestProgramm
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool result = false;
+            while (result == false)
+            {
+                Console.Write("Enter ineger number \na = ");
+                string a = Console.ReadLine();
+                int res;
+                result = int.TryParse(a, out res);
+                if (result == false) Console.WriteLine("Convertation Error, pleas try enter \na = ");
+            }
+
+            Console.WriteLine("apply convertation a");
+        }
+    }
+}
